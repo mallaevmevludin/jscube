@@ -1,0 +1,111 @@
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    text-align: center;
+    font-size: 17px;
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header:focus {
+    transition: 0.5s;
+}
+
+.footer {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+}
+
+.main {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cube {
+    width: 60%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cube-wrapper {
+    width: 70%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cube-one {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    height: 20vh;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+input#ru:focus {
+    background-image: url(images/ru.jpeg);
+    background-size: contain;
+    transition: 0.5s;
+}
+
+input#fr:focus {
+    background-image: url(images/fr.jpeg);
+    background-size: contain;
+}
+
+input#usa:focus {
+    background-image: url(images/usa.jpeg);
+    background-size: contain;
+}
+
+input#ch:focus {
+    background-image: url(images/ch.jpeg);
+    background-size: contain;
+}
+
+@media screen and (max-width: 600px) {
+    .cube {
+        width: 100%;
+    }
+
+    .cube-wrapper {
+        width: 90%;
+
+    }
+
+    .header {
+        font-size: 11px;
+        height: 30vh;
+    }
+
+    .footer {
+        height: 10vh;
+    }
+}
